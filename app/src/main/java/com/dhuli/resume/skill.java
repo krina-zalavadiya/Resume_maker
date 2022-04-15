@@ -8,28 +8,26 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Education extends AppCompatActivity {
+public class skill extends AppCompatActivity {
 
-    EditText course, collage, grade;
+
+    EditText skill;
     TextView next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education);
+        setContentView(R.layout.activity_skill);
 
-
-        course = findViewById(R.id.course);
-        collage = findViewById(R.id.collage);
-        grade = findViewById(R.id.grade);
+        skill = findViewById(R.id.skill);
         next = findViewById(R.id.next);
+
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String C = course.getText().toString();
-                String CO = collage.getText().toString();
-                String g = grade.getText().toString();
+
+                String sk = skill.getText().toString();
 
                 String name = getIntent().getStringExtra("name");
                 String surname = getIntent().getStringExtra("surname");
@@ -37,15 +35,20 @@ public class Education extends AppCompatActivity {
                 String email = getIntent().getStringExtra("email");
                 String mobileno = getIntent().getStringExtra("mobileno");
                 String gender = getIntent().getStringExtra("gender");
+                String course = getIntent().getStringExtra("course");
+                String collage = getIntent().getStringExtra("collage");
+                String grade = getIntent().getStringExtra("grade");
+                String company = getIntent().getStringExtra("company");
+                String year = getIntent().getStringExtra("year");
+                String start = getIntent().getStringExtra("start");
+                String end = getIntent().getStringExtra("end");
 
-                Intent intent = new Intent(Education.this,Experience.class);
-                intent.putExtra("course",C);
-                intent.putExtra("collage",CO);
-                intent.putExtra("grade",g);
+
+                Intent intent = new Intent(skill.this,Work.class);
+                intent.putExtra("skill",sk);
                 startActivity(intent);
+
             }
         });
-
-
     }
 }

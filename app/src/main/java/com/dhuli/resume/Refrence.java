@@ -8,29 +8,24 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Experience extends AppCompatActivity {
+public class Refrence extends AppCompatActivity {
 
+    EditText company1,weblink;
     TextView next;
-    EditText company,year,sd,ed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experience);
+        setContentView(R.layout.activity_refrence);
 
-        company = findViewById(R.id.company);
-        year = findViewById(R.id.year);
-        sd = findViewById(R.id.sd);
-        ed = findViewById(R.id.ed);
+        company1 = findViewById(R.id.company1);
+        weblink = findViewById(R.id.weblink);
         next = findViewById(R.id.next);
-
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String com = company.getText().toString();
-                String y = year.getText().toString();
-                String SD = sd.getText().toString();
-                String ED = ed.getText().toString();
+                String com1 = company1.getText().toString();
+                String web = weblink.getText().toString();
 
                 String name = getIntent().getStringExtra("name");
                 String surname = getIntent().getStringExtra("surname");
@@ -41,20 +36,20 @@ public class Experience extends AppCompatActivity {
                 String course = getIntent().getStringExtra("course");
                 String collage = getIntent().getStringExtra("collage");
                 String grade = getIntent().getStringExtra("grade");
+                String company = getIntent().getStringExtra("company");
+                String year = getIntent().getStringExtra("year");
+                String start = getIntent().getStringExtra("start");
+                String end = getIntent().getStringExtra("end");
+                String skill = getIntent().getStringExtra("skill");
+                String githublink = getIntent().getStringExtra("githublink");
+                String linkedlink = getIntent().getStringExtra("linkedlink");
 
-                Intent intent = new Intent(Experience.this,skill.class);
-
-                intent.putExtra("company",com);
-                intent.putExtra("year",y);
-                intent.putExtra("start",SD);
-                intent.putExtra("end",ED);
-
-
+                Intent intent = new Intent(Refrence.this,Template.class);
+                intent.putExtra("companyname",com1);
+                intent.putExtra("weblink",web);
                 startActivity(intent);
-
 
             }
         });
-
     }
 }

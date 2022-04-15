@@ -8,29 +8,25 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Experience extends AppCompatActivity {
+public class Work extends AppCompatActivity {
 
+
+    EditText link1,link2;
     TextView next;
-    EditText company,year,sd,ed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experience);
+        setContentView(R.layout.activity_work);
 
-        company = findViewById(R.id.company);
-        year = findViewById(R.id.year);
-        sd = findViewById(R.id.sd);
-        ed = findViewById(R.id.ed);
+        link1 =  findViewById(R.id.link1);
+        link2 = findViewById(R.id.link2);
         next = findViewById(R.id.next);
-
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String com = company.getText().toString();
-                String y = year.getText().toString();
-                String SD = sd.getText().toString();
-                String ED = ed.getText().toString();
+                String li1 = link1.getText().toString();
+                String li2 = link2.getText().toString();
 
                 String name = getIntent().getStringExtra("name");
                 String surname = getIntent().getStringExtra("surname");
@@ -41,20 +37,19 @@ public class Experience extends AppCompatActivity {
                 String course = getIntent().getStringExtra("course");
                 String collage = getIntent().getStringExtra("collage");
                 String grade = getIntent().getStringExtra("grade");
+                String company = getIntent().getStringExtra("company");
+                String year = getIntent().getStringExtra("year");
+                String start = getIntent().getStringExtra("start");
+                String end = getIntent().getStringExtra("end");
+                String skill = getIntent().getStringExtra("skill");
 
-                Intent intent = new Intent(Experience.this,skill.class);
-
-                intent.putExtra("company",com);
-                intent.putExtra("year",y);
-                intent.putExtra("start",SD);
-                intent.putExtra("end",ED);
-
-
+                Intent intent = new Intent(Work.this,Refrence.class);
+                intent.putExtra("githublink",li1);
+                intent.putExtra("linkedlink",li2);
                 startActivity(intent);
 
 
             }
         });
-
     }
 }

@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
-    tools:context=".Education">
-
+    android:layout_margin="10dp"
+    tools:context=".Refrence">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Education"
+        android:text="Refrence"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold" />
@@ -21,7 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/black" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,19 +29,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Course"
+            android:text="Company"
             android:textColor="@color/black"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/course"
+            android:id="@+id/company1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:hint="enter course" />
+            android:hint="enter Company name" />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,41 +50,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Collage"
+            android:text="linked link "
             android:textColor="@color/black"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/collage"
+            android:id="@+id/weblink"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:hint="enter collage name" />
+            android:hint="Enter web Link" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Grade"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
-
-        <EditText
-            android:id="@+id/grade"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:hint="enter grade" />
-
-    </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -119,5 +93,6 @@
             android:textSize="15dp" />
 
     </LinearLayout>
+
 
 </LinearLayout>

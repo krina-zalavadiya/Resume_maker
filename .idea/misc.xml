@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/next.xml" value="0.1" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_education.xml" value="0.18" />
-        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_experience.xml" value="0.20416666666666666" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_experience.xml" value="0.17" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_refrence.xml" value="0.20416666666666666" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_skill.xml" value="0.19010416666666666" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_work.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

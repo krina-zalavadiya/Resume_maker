@@ -42,6 +42,12 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/cloverhoneydemoregular"
             android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/surnname_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cloverhoneydemoregular"
+            android:textSize="25dp"/>
     </LinearLayout>
 
 

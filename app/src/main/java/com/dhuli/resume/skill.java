@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 public class skill extends AppCompatActivity {
 
 
-    EditText skill;
+    EditText Skill;
     TextView next;
 
     @Override
@@ -19,7 +20,7 @@ public class skill extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skill);
 
-        skill = findViewById(R.id.skill);
+        Skill = findViewById(R.id.Skill);
         next = findViewById(R.id.next);
 
 
@@ -27,7 +28,7 @@ public class skill extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String sk = skill.getText().toString();
+                String sk = Skill.getText().toString();
 
                 String name = getIntent().getStringExtra("name");
                 String surname = getIntent().getStringExtra("surname");
@@ -42,9 +43,28 @@ public class skill extends AppCompatActivity {
                 String year = getIntent().getStringExtra("year");
                 String start = getIntent().getStringExtra("start");
                 String end = getIntent().getStringExtra("end");
+                String githublink = getIntent().getStringExtra("githublink");
+                String linkedlink = getIntent().getStringExtra("linkedlink");
 
 
                 Intent intent = new Intent(skill.this,Work.class);
+                intent.putExtra("name",name);
+                intent.putExtra("surname",surname);
+                intent.putExtra("brithdate",brithdate);
+                intent.putExtra("email",email);
+                intent.putExtra("mobileno",mobileno);
+                intent.putExtra("gender",gender);
+                intent.putExtra("course",course);
+                intent.putExtra("collage",collage);
+                intent.putExtra("grade",grade);
+                intent.putExtra("company",company);
+                intent.putExtra("year",year);
+                intent.putExtra("grade",grade);
+                intent.putExtra("end",end);
+                intent.putExtra("grade",grade);
+                intent.putExtra("start",start);
+                intent.putExtra("githublink",githublink);
+                intent.putExtra("linkedlink",linkedlink);
                 intent.putExtra("skill",sk);
                 startActivity(intent);
 

@@ -45,6 +45,24 @@ public class Refrence extends AppCompatActivity {
                 String linkedlink = getIntent().getStringExtra("linkedlink");
 
                 Intent intent = new Intent(Refrence.this,Template.class);
+                intent.putExtra("name",name);
+                intent.putExtra("surname",surname);
+                intent.putExtra("brithdate",brithdate);
+                intent.putExtra("email",email);
+                intent.putExtra("mobileno",mobileno);
+                intent.putExtra("gender",gender);
+                intent.putExtra("course",course);
+                intent.putExtra("collage",collage);
+                intent.putExtra("grade",grade);
+                intent.putExtra("company",company);
+                intent.putExtra("year",year);
+                intent.putExtra("grade",grade);
+                intent.putExtra("end",end);
+                intent.putExtra("grade",grade);
+                intent.putExtra("skill",skill);
+                intent.putExtra("githublink",githublink);
+                intent.putExtra("linkedlink",linkedlink);
+                intent.putExtra("start",start);
                 intent.putExtra("companyname",com1);
                 intent.putExtra("weblink",web);
                 startActivity(intent);

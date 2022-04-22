@@ -44,6 +44,7 @@ public class Work extends AppCompatActivity {
                 String skill = getIntent().getStringExtra("skill");
 
                 Intent intent = new Intent(Work.this,Refrence.class);
+                intent.putExtra("name",name);
                 intent.putExtra("githublink",li1);
                 intent.putExtra("linkedlink",li2);
                 startActivity(intent);

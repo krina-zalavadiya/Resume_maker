@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Resume">
         <activity
+            android:name=".Template4"
+            android:exported="false" />
+        <activity
+            android:name=".Template3"
+            android:exported="false" />
+        <activity
+            android:name=".Template2"
+            android:exported="false" />
+        <activity
+            android:name=".Template1"
+            android:exported="false" />
+        <activity
             android:name=".Template"
             android:exported="false" />
         <activity

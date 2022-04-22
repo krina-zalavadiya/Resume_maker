@@ -39,6 +39,12 @@ public class Education extends AppCompatActivity {
                 String gender = getIntent().getStringExtra("gender");
 
                 Intent intent = new Intent(Education.this,Experience.class);
+                intent.putExtra("name",name);
+                intent.putExtra("surname",surname);
+                intent.putExtra("brithdate",brithdate);
+                intent.putExtra("email",email);
+                intent.putExtra("mobileno",mobileno);
+                intent.putExtra("gender",gender);
                 intent.putExtra("course",C);
                 intent.putExtra("collage",CO);
                 intent.putExtra("grade",g);

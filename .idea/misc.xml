@@ -3,15 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/circle.xml" value="0.116" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/contact.xml" value="0.116" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/course.xml" value="0.116" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/next.xml" value="0.1" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/drawable/square.xml" value="0.116" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_education.xml" value="0.18" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_experience.xml" value="0.17" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_refrence.xml" value="0.20416666666666666" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_skill.xml" value="0.19010416666666666" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template.xml" value="0.15" />
-        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template1.xml" value="0.16" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template1.xml" value="0.2" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template2.xml" value="0.16" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template3.xml" value="0.20416666666666666" />
+        <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_template4.xml" value="0.20416666666666666" />
         <entry key="..\:/krina/Android Project/Resume/app/src/main/res/layout/activity_work.xml" value="0.20416666666666666" />
       </map>
     </option>

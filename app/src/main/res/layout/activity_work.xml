@@ -34,7 +34,7 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/link1"
+            android:id="@+id/githublink"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -55,7 +55,7 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/link2"
+            android:id="@+id/linkedlink"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"

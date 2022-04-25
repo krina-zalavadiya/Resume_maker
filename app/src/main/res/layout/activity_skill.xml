@@ -35,7 +35,49 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/Skill"
+            android:id="@+id/Skill1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="enter skill" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skill "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/Skill2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="enter skill" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skill "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/Skill3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"

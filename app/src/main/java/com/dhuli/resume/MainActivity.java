@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    EditText name,surname,brithdate,email,mobileno;
+    EditText name,surname,brithdate,email,mobileno,address,about,hobbie;
     RadioGroup gender;
     TextView next;
     @SuppressLint("WrongViewCast")
@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
           mobileno = findViewById(R.id.mobileno);
           gender = findViewById(R.id.gender);
           next = findViewById(R.id.next);
+          address = findViewById(R.id.address);
+          about = findViewById(R.id.about);
+          hobbie = findViewById(R.id.hobbie);
 
           next.setOnClickListener(new View.OnClickListener() {
               @Override
@@ -41,16 +44,22 @@ public class MainActivity extends AppCompatActivity {
                   String b = brithdate.getText().toString();
                   String e = email.getText().toString();
                   String m = mobileno.getText().toString();
+                  String A = address.getText().toString();
+                  String a = about.getText().toString();
+                  String h = hobbie.getText().toString();
 
                   int id = gender.getCheckedRadioButtonId();
                   RadioButton button = findViewById(id);
 
                   Intent intent = new Intent(MainActivity.this,Education.class);
                   intent.putExtra("name",n);
+                  intent.putExtra("address",A);
                   intent.putExtra("surname",s);
                   intent.putExtra("brithdate",b);
                   intent.putExtra("email",e);
                   intent.putExtra("mobileno",m);
+                  intent.putExtra("about",a);
+                  intent.putExtra("hobbie",h);
                   intent.putExtra("gender",button.getText().toString());
                   startActivity(intent);
 

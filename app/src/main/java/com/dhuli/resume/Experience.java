@@ -38,6 +38,9 @@ public class Experience extends AppCompatActivity {
                 String email = getIntent().getStringExtra("email");
                 String mobileno = getIntent().getStringExtra("mobileno");
                 String gender = getIntent().getStringExtra("gender");
+                String address = getIntent().getStringExtra("address");
+                String about = getIntent().getStringExtra("about");
+                String hobbie = getIntent().getStringExtra("hobbie");
                 String course = getIntent().getStringExtra("course");
                 String collage = getIntent().getStringExtra("collage");
                 String grade = getIntent().getStringExtra("grade");
@@ -51,6 +54,9 @@ public class Experience extends AppCompatActivity {
                 intent.putExtra("gender",gender);
                 intent.putExtra("course",course);
                 intent.putExtra("collage",collage);
+                intent.putExtra("hobbie",hobbie);
+                intent.putExtra("address",address);
+                intent.putExtra("about",about);
                 intent.putExtra("grade",grade);
                 intent.putExtra("year",y);
                 intent.putExtra("company",com);

@@ -36,7 +36,10 @@ public class Education extends AppCompatActivity {
                 String brithdate = getIntent().getStringExtra("brithdate");
                 String email = getIntent().getStringExtra("email");
                 String mobileno = getIntent().getStringExtra("mobileno");
+                String address = getIntent().getStringExtra("address");
+                String about = getIntent().getStringExtra("about");
                 String gender = getIntent().getStringExtra("gender");
+                String hobbie = getIntent().getStringExtra("hobbie");
 
                 Intent intent = new Intent(Education.this,Experience.class);
                 intent.putExtra("name",name);
@@ -44,7 +47,10 @@ public class Education extends AppCompatActivity {
                 intent.putExtra("brithdate",brithdate);
                 intent.putExtra("email",email);
                 intent.putExtra("mobileno",mobileno);
+                intent.putExtra("address",address);
+                intent.putExtra("about",about);
                 intent.putExtra("gender",gender);
+                intent.putExtra("hobbie",hobbie);
                 intent.putExtra("course",C);
                 intent.putExtra("collage",CO);
                 intent.putExtra("grade",g);

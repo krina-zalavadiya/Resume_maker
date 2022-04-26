@@ -40,10 +40,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:textSize="20dp"
+                android:textSize="10dp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="ABOUT ME"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/about_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
 
@@ -209,7 +227,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="10dp"
-                    android:background="@color/black" />
+                    android:background="@color/black"/>
 
                 <TextView
                     android:id="@+id/collage_txt"
@@ -217,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:textColor="@color/black"
-                    android:textSize="10dp" />
+                    android:textSize="10dp"/>
 
                 <TextView
                     android:id="@+id/course_txt1"

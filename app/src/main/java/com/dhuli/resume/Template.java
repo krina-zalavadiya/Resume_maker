@@ -122,7 +122,21 @@ public class Template extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Template.this, Template4.class);
-
+                intent.putExtra("name",name);
+                intent.putExtra("surname", surname);
+                intent.putExtra("mobileno", mobileno);
+                intent.putExtra("email", email);
+                intent.putExtra("address", address);
+                intent.putExtra("Skill1", Skill1);
+                intent.putExtra("Skill2", Skill2);
+                intent.putExtra("course", course);
+                intent.putExtra("Skill3", Skill3);
+                intent.putExtra("about", about);
+                intent.putExtra("start", start);
+                intent.putExtra("grade", grade);
+                intent.putExtra("collage", collage);
+                intent.putExtra("end", end);
+                intent.putExtra("hobbie", hobbie);
                 startActivity(intent);
             }
         });
